@@ -1,4 +1,4 @@
-if [ ! -f ~/decode ]; then
+if [ ! -d ~/decode ]; then
     echo "You don't have a ~/decode folder. Create one now! (try running: mkdir ~/decode)"
     exit 1
 fi
