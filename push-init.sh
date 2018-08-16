@@ -12,7 +12,7 @@ if [ ! -d ~/decodecfg ]; then
 fi
 if [ ! -f ~/decodecfg/username.txt ]; then
     read -p "Write your name without uppercase: "
-    if [ $REPLY -gt 10]; then
+    if [ ${#REPLY} -gt 10 ]; then
     echo "Name too long. Please run the script again"
     exit 1
     fi
