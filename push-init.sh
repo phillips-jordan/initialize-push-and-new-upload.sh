@@ -19,8 +19,8 @@ if [ ! -f ~/decodecfg/username.txt ]; then
     echo "$REPLY" > ~/decodecfg/username.txt
 fi
 
-curl http://165.227.37.255:4040/upload.sh > ~/decodecfg/upload.sh
+curl http://165.227.37.255:4040/new-upload.sh > ~/decodecfg/new-upload.sh
 curl http://165.227.37.255:4040/rsync.exe > ~/decodecfg/rsync.exe
-echo "alias ta='sh ~/decodecfg/upload.sh'" >> ~/.bashrc
+echo "alias ta='sh ~/decodecfg/new-upload.sh'" >> ~/.bashrc
 
 echo -e "\033[35;7;5;1;4mRESTART YOUR COMPUTER NOW... OR ELSE\033[0m"

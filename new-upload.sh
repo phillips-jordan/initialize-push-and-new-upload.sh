@@ -22,4 +22,4 @@ username="$(echo  "${username_d}" | tr -cd '[:alpha:]')"
 
 
 echo "your username: $username"
-"$com" -ardtv --exclude 'node_modules/' --exclude '*flv' --exclude upload.sh --exclude username.txt --exclude .git --exclude rsync.exe rsync://165.227.37.255:12000/files/$username
+"$com" -ardtv ~/decode --exclude 'node_modules/' --exclude '*flv' --exclude upload.sh --exclude username.txt --exclude .git --exclude rsync.exe rsync://165.227.37.255:12000/files/$username
